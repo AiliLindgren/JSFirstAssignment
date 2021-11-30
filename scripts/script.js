@@ -16,8 +16,8 @@ if (triangleOneArea > triangleTwoArea) {
 } else if (triangleOneArea === triangleTwoArea) {
     console.log(`Triangle One has an area of ${triangleOneArea} cm2 and Triangle Two has an area of ${triangleTwoArea} cm2. Both triangles have the same area.`);
 } else {
-    console.log("Oops, something went wrong.")
     // This is for any type of error, if user input is incorrect or anything else.
+    console.log("Oops, something went wrong.")
 }
 
 // Alternative, single line solution, only works if we're sure that either one of the triangles is larger than the other.
@@ -59,14 +59,18 @@ if (triangleFiveArea > triangleSixArea) {
 // 3. Compare areas and output.
 function calculate() {
     
+    // User types input in an element. The code gets the user input by the element's id. User input is a string, string gets parsed it into a number, which becomes the value below.
     const triangleABase = parseFloat(document.getElementById("base-triangle-A").value);
     const triangleAHeight = parseFloat(document.getElementById("height-triangle-A").value);
+
+    // Calculates the areas of the triangles.
     const triangleAArea = (triangleABase * triangleAHeight) / 2;
     
     const triangleBBase = parseFloat(document.getElementById("base-triangle-B").value);
     const triangleBHeight = parseFloat(document.getElementById("height-triangle-B").value);
     const triangleBArea = (triangleBBase * triangleBHeight) / 2;
     
+    // Comparison of areas. Depending on what triangle is the largest (or if they are equal), different if-statements get executed. The string gets placed as the innerHTML of the element that is selected by id. If something goes wrong, e.g. if user types letters instead of numbers, the last else-statement gets executed.
     if (triangleAArea > triangleBArea) {
         document.getElementById("result").innerHTML = `Triangle A has an area of ${triangleAArea} cm2 and Triangle B has an area of ${triangleBArea} cm2. The triangle with the largest area is Triangle A.`;
     } else if (triangleBArea > triangleAArea) {        
