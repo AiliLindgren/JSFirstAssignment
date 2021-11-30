@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <h1>JavaScript - First Assignment</h1>
+    <h2>Aili Lindgren</h2>
+    <h3>Calculate and compare areas of two triangles</h3>
+    <form action="">
+        <div class="triangle-A-container">
+            <label for="base-triangle-A">Triangle A Base:</label>
+            <input type="text" name="base-triangle-A" id="base-triangle-A" placeholder="Enter the base in cm">
+            <label for="height-triangle-A">Triangle A Height:</label>
+            <input type="text" name="height-triangle-A" id="height-triangle-A" placeholder="Enter the height in cm">        
+        </div> 
+        <div class="triangle-B-container">
+            <label for="base-triangle-B">Triangle B Base:</label>
+            <input type="text" name="base-triangle-B" id="base-triangle-B" placeholder="Enter the base in cm">
+            <label for="height-triangle-B">Triangle B Height:</label>
+            <input type="text" name="height-triangle-B" id="height-triangle-B" placeholder="Enter the height in cm">
+        </div> 
+    </form>
+        <button type="button" onclick="calculate()">Calculate</button>
+        <p>Result of calculation and comparison:</p>
+        <p class="result-txt" id="result"></p>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
