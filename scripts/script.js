@@ -59,7 +59,7 @@ if (triangleFiveArea > triangleSixArea) {
 // 3. Compare areas and output.
 function calculate() {
     
-    // User types input in an element. The code gets the user input by the element's id. User input is a string, string gets parsed it into a number, which becomes the value below.
+    // User types input in an element. The code gets the user input by the element's id. User input is a string, string gets parsed into a number, which becomes the value below.
     const triangleABase = parseFloat(document.getElementById("base-triangle-A").value);
     const triangleAHeight = parseFloat(document.getElementById("height-triangle-A").value);
 
